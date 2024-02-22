@@ -2,7 +2,8 @@
 
 > [!TIP]
 > Ed-Fi customizations:
-> * `main`, based on `v1.9.0`, updates underlying action versions from 3.x to 4.x
+>
+> - `main`, based on `v1.9.0`, updates underlying action versions from 3.x to 4.x
 
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/slsa-framework/slsa-github-generator/badge)](https://api.securityscorecards.dev/projects/github.com/slsa-framework/slsa-github-generator)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6503/badge)](https://bestpractices.coreinfrastructure.org/projects/6503)

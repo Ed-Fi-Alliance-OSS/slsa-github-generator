@@ -191,12 +191,12 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Download artifact1
-        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 #v4.1.1
+        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 # v4.1.1
         with:
           name: artifact1
 
       - name: Download artifact2
-        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 #v4.1.1
+        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 # v4.1.1
         with:
           name: artifact2
 

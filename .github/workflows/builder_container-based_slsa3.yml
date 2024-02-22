@@ -584,7 +584,7 @@ jobs:
       # TODO(https://github.com/slsa-framework/slsa-github-generator/issues/1655): Use the SLSA
       # layout files and their checksums to validate the artifacts.
       - name: Download artifacts
-        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 #v4.1.1
+        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 # v4.1.1
         with:
           name: "${{ needs.build.outputs.build-outputs-name }}"
           path: "${{ needs.build.outputs.build-outputs-name }}"
@@ -592,7 +592,7 @@ jobs:
       # TODO(https://github.com/slsa-framework/slsa-github-generator/issues/1655): Use the
       # secure-folder-download action.
       - name: Download provenance
-        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 #v4.1.1
+        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 # v4.1.1
         with:
           name: "${{ needs.provenance.outputs.provenance-name }}"
           path: "${{ needs.provenance.outputs.provenance-name }}"
