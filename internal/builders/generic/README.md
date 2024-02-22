@@ -156,7 +156,7 @@ jobs:
           echo "hashes=$(sha256sum artifact1 artifact2 | base64 -w0)" >> "$GITHUB_OUTPUT"
 
       - name: Upload artifact1
-        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3.1.0
+        uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: artifact1
           path: artifact1
@@ -164,7 +164,7 @@ jobs:
           retention-days: 5
 
       - name: Upload artifact2
-        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3.1.0
+        uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: artifact2
           path: artifact2
@@ -191,12 +191,12 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Download artifact1
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v2.1.0
+        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 #v4.1.1
         with:
           name: artifact1
 
       - name: Download artifact2
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v2.1.0
+        uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 #v4.1.1
         with:
           name: artifact2
 
@@ -762,7 +762,7 @@ jobs:
           echo "hashes=$(sha256sum ${{ steps.build.outputs.artifact_pattern }} | base64 -w0)" >> "$GITHUB_OUTPUT"
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3
+        uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: maven-build-outputs
           path: ${{ steps.build.outputs.artifact_pattern }}
@@ -854,7 +854,7 @@ Jobs:
           echo "hashes=$(sha256sum ./build/libs/* | base64 -w0)" >> "$GITHUB_OUTPUT"
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3
+        uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: gradle-build-outputs
           path: ./build/libs/
