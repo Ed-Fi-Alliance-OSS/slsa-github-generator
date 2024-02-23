@@ -193,10 +193,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741
+      - uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 # v4.1.1
         with:
           name: ${{ needs.build.outputs.go-binary-name }}
-      - uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741
+      - uses: actions/download-artifact@6b208ae046db98c579e8a3aa621ab581ff575935 # v4.1.1
         with:
           name: ${{ needs.build.outputs.go-binary-name }}.intoto.jsonl
       - name: Release
